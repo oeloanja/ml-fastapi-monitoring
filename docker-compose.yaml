@@ -1,0 +1,13 @@
+name: ml-monitoring
+
+services:
+  web:
+    build: .
+    container_name: ml-fastapi-monitoring
+    volumes:
+      - .:/code
+    ports:
+      - "5000:80"
+
+
+      
